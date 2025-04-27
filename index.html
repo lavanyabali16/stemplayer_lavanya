@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Stem Player // Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stem-player-container">
+
+        <div class="player-header">
+            <div class="logo">STEM // WEB</div>
+            <div id="loading-indicator" class="loading" style="display: none;"><span></span><span></span><span></span></div>
+        </div>
+
+        <div class="song-selector">
+            <select id="song-select">
+                <option value="">-- Select Track --</option>
+                <!-- Options populated by JS -->
+            </select>
+        </div>
+
+        <!-- Main Controls Area -->
+        <div id="controls" class="controls-disabled">
+            <div class="visualizer-container">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            </div>
+
+            <div class="stem-buttons">
+                <button id="vocals-btn" data-stem="vocals" aria-pressed="false" disabled>VOCALS <span class="shortcut">(V)</span></button>
+                <button id="drums-btn" data-stem="drums" aria-pressed="false" disabled>DRUMS <span class="shortcut">(D)</span></button>
+                <button id="bass-btn" data-stem="bass" aria-pressed="false" disabled>BASS <span class="shortcut">(B)</span></button>
+                <button id="instruments-btn" data-stem="instruments" aria-pressed="false" disabled>INSTR <span class="shortcut">(I)</span></button>
+            </div>
+
+            <div class="mix-button">
+                 <button id="full-mix-btn" disabled>MIX <span class="shortcut">(F)</span></button>
+            </div>
+        </div>
+        <!-- End Main Controls Area -->
+
+        <!-- Footer Information -->
+        <div class="player-footer">
+             <span id="status">Status: Idle</span>
+             <span id="current-time">0:00</span>
+        </div>
+        <!-- End Footer Information -->
+
+        <div id="error-message" class="error" style="display: none;"></div>
+
+        <!-- === ADDED CREDIT LINE HERE === -->
+        <div class="made-by-credit">
+            Made with <span class="heart">❤️</span> by Lavanya
+        </div>
+        <!-- === END CREDIT LINE === -->
+
+    </div> <!-- End stem-player-container -->
+
+    <script src="script.js"></script>
+</body>
+</html>
