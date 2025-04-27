@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- Configuration (Keep as is) ---
     const songs = {
-        'Stronger': 'songA',
-        'Song B': 'songB',
-        'Song C': 'songC'
+        'David Guetta - Titanium': 'songA',
+        'Doechii - Anxiety': 'songB',
+        'Ed Sheeran - Shape of You': 'songC',
+        'Charlie Puth - We Dont Talk Anymore': 'songD'
     };
     const stemTypes = ['vocals', 'drums', 'bass', 'instruments'];
     const audioFolderPath = 'public/audio/';
