@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'David Guetta - Titanium': 'songA',
         'Doechii - Anxiety': 'songB',
         'Ed Sheeran - Shape of You': 'songC',
-        'Charlie Puth - We Dont Talk Anymore': 'songD'
+        'Charlie Puth - We Dont Talk Anymore': 'songD',
+        'Udd Gye': 'songE'
     };
     const stemTypes = ['vocals', 'drums', 'bass', 'instruments'];
     const audioFolderPath = 'public/audio/';
